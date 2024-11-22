@@ -40,18 +40,21 @@
                             <p class="card-title-desc">Anda dapat mengelola data gaji karyawan pada halaman ini.</p>
                             {{-- input type month --}}
                             <div class="input-group mb-3">
-                                <label class="input-group-text" for="bulan">Periode Bulan</label>
+                                <label class="input-group-text" for="bulan">Periode Gaji</label>
                                 <input type="month" class="form-control" id="bulan" name="bulan" value="{{ date('Y-m') }}"
                                     required>
                             </div>
                         </div>
 
                         <div class="col-md-8">
-                            <button type="button" class="btn btn-primary waves-effect waves-light float-md-end mx-2"
+                            <button type="button" class="btn btn-warning waves-effect waves-light float-md-end mx-1">
+                                <i class="mdi mdi-filter"></i> Filter Data
+                            </button>
+                            <button type="button" class="btn btn-primary waves-effect waves-light float-md-end mx-1"
                                 data-bs-toggle="modal" data-bs-target="#myModal" id="btn-create-post">
                                 <i class="fas fa-file-import"></i> Import Data
                             </button>
-                            <a href="#" class="btn btn-primary waves-effect waves-light float-md-end mx-2"
+                            <a href="#" class="btn btn-success waves-effect waves-light float-md-end mx-1"
                                 id="btn-create-post">
                                 <i class="fas fa-file-export"></i> Export Data
                             </a>
@@ -92,6 +95,9 @@
                                     <td>Rp. 200.000</td>
                                     <td>Rp. 3.150.000</td>
                                     <td>
+                                        <button type="button" class="btn btn-success btn-sm" id="btn-edit-post">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
                                         <button type="button" class="btn btn-warning btn-sm" id="btn-edit-post">
                                             <i class="fas fa-edit"></i>
                                         </button>
@@ -114,6 +120,9 @@
                                     <td>Rp. 200.000</td>
                                     <td>Rp. 3.650.000</td>
                                     <td>
+                                        <button type="button" class="btn btn-success btn-sm" id="btn-edit-post">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
                                         <button type="button" class="btn btn-warning btn-sm" id="btn-edit-post">
                                             <i class="fas fa-edit"></i>
                                         </button>
@@ -136,6 +145,9 @@
                                     <td>Rp. 200.000</td>
                                     <td>Rp. 4.150.000</td>
                                     <td>
+                                        <button type="button" class="btn btn-success btn-sm" id="btn-edit-post">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
                                         <button type="button" class="btn btn-warning btn-sm" id="btn-edit-post">
                                             <i class="fas fa-edit"></i>
                                         </button>
@@ -158,6 +170,9 @@
                                     <td>Rp. 200.000</td>
                                     <td>Rp. 3.650.000</td>
                                     <td>
+                                        <button type="button" class="btn btn-success btn-sm" id="btn-edit-post">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
                                         <button type="button" class="btn btn-warning btn-sm" id="btn-edit-post">
                                             <i class="fas fa-edit"></i>
                                         </button>
@@ -180,6 +195,9 @@
                                     <td>Rp. 200.000</td>
                                     <td>Rp. 3.150.000</td>
                                     <td>
+                                        <button type="button" class="btn btn-success btn-sm" id="btn-edit-post">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
                                         <button type="button" class="btn btn-warning btn-sm" id="btn-edit-post">
                                             <i class="fas fa-edit"></i>
                                         </button>
@@ -202,6 +220,9 @@
                                     <td>Rp. 200.000</td>
                                     <td>Rp. 3.650.000</td>
                                     <td>
+                                        <button type="button" class="btn btn-success btn-sm" id="btn-edit-post">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
                                         <button type="button" class="btn btn-warning btn-sm" id="btn-edit-post">
                                             <i class="fas fa-edit"></i>
                                         </button>
@@ -224,6 +245,9 @@
                                     <td>Rp. 200.000</td>
                                     <td>Rp. 4.150.000</td>
                                     <td>
+                                        <button type="button" class="btn btn-success btn-sm" id="btn-edit-post">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
                                         <button type="button" class="btn btn-warning btn-sm" id="btn-edit-post">
                                             <i class="fas fa-edit"></i>
                                         </button>

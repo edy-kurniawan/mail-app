@@ -40,19 +40,19 @@
                     <div class="navbar-brand-box">
                         <a href="#" class="logo logo-dark">
                             <span class="logo-sm">
-                                <h4 class="text-white mt-4">AHAS APP</h4>
+                                <h4 class="text-white mt-4">PANEL APP</h4>
                             </span>
                             <span class="logo-lg">
-                                <h4 class="text-white mt-4">AHAS APP</h4>
+                                <h4 class="text-white mt-4">PANEL APP</h4>
                             </span>
                         </a>
 
                         <a href="#" class="logo logo-light">
                             <span class="logo-sm">
-                                <h4 class="text-white mt-4">AHAS APP</h4>
+                                <h4 class="text-white mt-4">PANEL APP</h4>
                             </span>
                             <span class="logo-lg">
-                                <h4 class="text-white mt-4">AHAS APP</h4>
+                                <h4 class="text-white mt-4">PANEL APP</h4>
                             </span>
                         </a>
                     </div>
@@ -135,7 +135,7 @@
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="menu-title" key="t-menu">ADMIN</li>
+                        <li class="menu-title" key="t-menu">MENU ADMIN</li>
 
                         <li>
                             <a href="{{ route('admin.karyawan.index') }}" class="waves-effect">
@@ -168,24 +168,52 @@
                     </ul>
 
                     <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="menu-title" key="t-menu">KASIR</li>
+                        <li class="menu-title" key="t-menu">MENU KASIR</li>
 
                         <li>
-                            <a href="{{ route('admin.karyawan.index') }}" class="waves-effect">
+                            <a href="{{ route('kasir.absensi.index') }}" class="waves-effect">
                                 <i class="fas fa-user"></i>
                                 <span>Absensi</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('kasir.absensi.show', 2) }}" class="waves-effect">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>Rekap Absensi</span>
                             </a>
                         </li>
 
                     </ul>
 
                     <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="menu-title" key="t-menu">MANAGEMENT</li>
+                        <li class="menu-title" key="t-menu">MENU MANAGEMENT</li>
 
                         <li>
                             <a href="{{ route('management.report.index') }}" class="waves-effect">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-money-check-alt"></i>
                                 <span>Slip Gaji</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('management.broadcast.index') }}" class="waves-effect">
+                                <i class="fas fa-broadcast-tower"></i>
+                                <span>Broadcast Slip Gaji</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('management.report.show', 1) }}" class="waves-effect">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Gaji Per Bengkel</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('management.report.create') }}" class="waves-effect">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Gaji Per Karyawan</span>
                             </a>
                         </li>
 
@@ -212,7 +240,7 @@
                         <div class="col-sm-12">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © POINT OF SALES
+                            </script> © AHAS
                         </div>
                     </div>
                 </div>

@@ -31,6 +31,69 @@
     </div>
 
     <div class="row">
+        <div class="col-lg-4">
+            <div class="card mini-stats-wid">
+                <div class="card-body">
+                    
+                    <div class="d-flex flex-wrap">
+                        <div class="me-3">
+                            <p class="text-muted mb-2">Total Karyawan</p>
+                            <h5 class="mb-0">160</h5>
+                        </div>
+
+                        <div class="avatar-sm ms-auto">
+                            <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                <i class="bx bxs-user"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card blog-stats-wid">
+                <div class="card-body">
+
+                    <div class="d-flex flex-wrap">
+                        <div class="me-3">
+                            <p class="text-muted mb-2">Total Laki-Laki</p>
+                            <h5 class="mb-0">140</h5>
+                        </div>
+
+                        <div class="avatar-sm ms-auto">
+                            <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                <i class="bx bx-male-sign"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card blog-stats-wid">
+                <div class="card-body">
+                    <div class="d-flex flex-wrap">
+                        <div class="me-3">
+                            <p class="text-muted mb-2">Total Perempuan</p>
+                            <h5 class="mb-0">20</h5>
+                        </div>
+
+                        <div class="avatar-sm ms-auto">
+                            <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                <i class="bx bx-female-sign"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end row -->
+
+    <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
@@ -41,9 +104,15 @@
                         </div>
 
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-primary waves-effect waves-light float-md-end"
+                            <button type="button" class="btn btn-primary waves-effect waves-light float-md-end mx-1"
                                 data-bs-toggle="modal" data-bs-target="#myModal" id="btn-create-post">
                                 <i class="fas fa-plus"></i> Tambah Data Karyawan
+                            </button>
+                            <button type="button" class="btn btn-success waves-effect waves-light float-md-end mx-1">
+                                <i class="fas fa-download"></i> Export Data
+                            </button>
+                            <button type="button" class="btn btn-info waves-effect waves-light float-md-end mx-1">
+                                <i class="fas fa-upload"></i> Import Data
                             </button>
                         </div>
                     </div>
@@ -149,6 +218,14 @@
                         <div class="col-lg-12">
                             <label for="nominal" class="form-label">NIK</label>
                             <input type="number" class="form-control" id="nominal" name="nominal" placeholder="Masukan NIK">
+                            <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-nominal"></div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-lg-12">
+                            <label for="nominal" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="nominal" name="nominal" placeholder="Masukan Email">
                             <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-nominal"></div>
                         </div>
                     </div>

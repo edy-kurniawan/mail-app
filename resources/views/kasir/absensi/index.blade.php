@@ -44,6 +44,9 @@
                                 <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#myModal">
                                     <i class="mdi mdi-filter"></i> Filter Data
                                 </button>
+                                <a href="{{ route('kasir.absensi.create')}}" type="button" class="btn btn-success waves-effect waves-light">
+                                    <i class="far fa-calendar-times"></i> Tambah Data Absensi
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -137,15 +140,6 @@
                         <label for="tanggal" class="form-label">Bulan</label>
                         <input type="month" class="form-control" id="tanggal" name="tanggal" value="{{ date('Y-m') }}"
                             required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="bengkel" class="form-label">Bengkel</label>
-                        <select class="form-select" id="bengkel" name="bengkel" required>
-                            <option value="">Pilih Bengkel</option>
-                            <option value="Bengkel A">Bengkel A</option>
-                            <option value="Bengkel B">Bengkel B</option>
-                        </select>
                     </div>
 
                     <div class="mb-3">

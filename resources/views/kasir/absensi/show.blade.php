@@ -20,10 +20,10 @@
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0 font-size-18">Menu Absensi</h4>
+                <h4 class="mb-sm-0 font-size-18">Menu Rekap</h4>
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item active">Menu/Data Absensi</li>
+                        <li class="breadcrumb-item active">Menu/Data Rekap</li>
                     </ol>
                 </div>
             </div>
@@ -35,81 +35,69 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row mb-2">
-                        <div class="col-md-6 col-12">
-                            <h4 class="card-title">Data Absensi</h4>
-                            <p class="card-title-desc">Anda dapat mengelola data absensi karyawan pada halaman ini.</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="text-end">
-                                <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#myModal">
-                                    <i class="mdi mdi-filter"></i> Filter Data
-                                </button>
+                        <div class="col-md-4 col-12">
+                            <h4 class="card-title">Data Rekap</h4>
+                            <p class="card-title-desc">Anda dapat melihat data rekap absensi karyawan pada halaman ini.</p>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="bulan">Bulan</label>
+                                <input type="month" class="form-control" id="bulan" name="bulan" value="{{ date('Y-m') }}"
+                                    required>
                             </div>
                         </div>
                     </div>
 
                     <div class="table-responsive">
-                        <table id="table" class="table table-bordered dt-responsive nowrap w-100">
+                        <table id="table" class="table table-bordered dt-responsive nowrap w-10 Hari0">
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Tanggal</th>
                                     <th>NIK</th>
                                     <th>Karyawan</th>
-                                    <th>Status</th>
-                                    <th>Bengkel</th>
+                                    <th>Jabatan</th>
+                                    <th>Hadir</th>
+                                    <th>Tidak Hadir</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>01/09/2021</td>
                                     <td>123456</td>
                                     <td>Andi</td>
-                                    <td>
-                                        <span class="badge bg-success">Hadir</span>
-                                    </td>
-                                    <td>Bengkel A</td>
+                                    <td>Mekanik</td>
+                                    <td>20 Hari</td>
+                                    <td>10 Hari</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>02/09/2021</td>
-                                    <td>123456</td>
-                                    <td>Andi</td>
-                                    <td>
-                                        <span class="badge bg-danger">Tidak Hadir</span>
-                                    </td>
-                                    <td>Bengkel A</td>
+                                    <td>123457</td>
+                                    <td>Tio</td>
+                                    <td>Supervisor</td>
+                                    <td>20 Hari</td>
+                                    <td>10 Hari</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>03/09/2021</td>
-                                    <td>123456</td>
-                                    <td>Andi</td>
-                                    <td>
-                                        <span class="badge bg-success">Hadir</span>
-                                    </td>
-                                    <td>Bengkel A</td>
+                                    <td>123458</td>
+                                    <td>Caca</td>
+                                    <td>Admin</td>
+                                    <td>20 Hari</td>
+                                    <td>10 Hari</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>04/09/2021</td>
-                                    <td>123456</td>
-                                    <td>Andi</td>
-                                    <td>
-                                        <span class="badge bg-danger">Tidak Hadir</span>
-                                    </td>
-                                    <td>Bengkel A</td>
+                                    <td>123459</td>
+                                    <td>Yoga</td>
+                                    <td>Admin</td>
+                                    <td>20 Hari</td>
+                                    <td>10 Hari</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>05/09/2021</td>
-                                    <td>3456</td>
-                                    <td>Budi</td>
-                                    <td>
-                                        <span class="badge bg-success">Hadir</span>
-                                    </td>
-                                    <td>Bengkel B</td>
+                                    <td>123460</td>
+                                    <td>Yogi</td>
+                                    <td>Admin</td>
+                                    <td>20 Hari</td>
+                                    <td>10 Hari</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -137,15 +125,6 @@
                         <label for="tanggal" class="form-label">Bulan</label>
                         <input type="month" class="form-control" id="tanggal" name="tanggal" value="{{ date('Y-m') }}"
                             required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="bengkel" class="form-label">Bengkel</label>
-                        <select class="form-select" id="bengkel" name="bengkel" required>
-                            <option value="">Pilih Bengkel</option>
-                            <option value="Bengkel A">Bengkel A</option>
-                            <option value="Bengkel B">Bengkel B</option>
-                        </select>
                     </div>
 
                     <div class="mb-3">

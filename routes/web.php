@@ -8,9 +8,12 @@ use App\Http\Controllers\Admin\GajiController;
 use App\Http\Controllers\Admin\KaryawanController;
 
 use App\Http\Controllers\Management\ReportController;
+use App\Http\Controllers\Management\BroadcastController;
+
+use App\Http\Controllers\Kasir\AbsensiController as KasirAbsensiController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
@@ -22,5 +25,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
 Route::group(['prefix' => 'management', 'as' => 'management.'], function () {
     Route::resource('report', ReportController::class);
+    Route::resource('broadcast', BroadcastController::class);
+});
+
+Route::group(['prefix' => 'kasir', 'as' => 'kasir.'], function () {
+    Route::resource('absensi', KasirAbsensiController::class);
 });
 

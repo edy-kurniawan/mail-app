@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Management;
+namespace App\Http\Controllers\Kasir;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ReportController extends Controller
+class AbsensiController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('management.report.index');
+        return view('kasir.absensi.index');
     }
 
     /**
@@ -20,8 +20,7 @@ class ReportController extends Controller
      */
     public function create()
     {
-        return view('management.report.create');
-        
+        return view('kasir.absensi.create');
     }
 
     /**
@@ -37,7 +36,7 @@ class ReportController extends Controller
      */
     public function show(string $id)
     {
-        return view('management.report.show');
+        return view('kasir.absensi.show');
     }
 
     /**

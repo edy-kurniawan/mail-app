@@ -5,14 +5,14 @@ namespace App\Http\Controllers\Management;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ReportController extends Controller
+class BroadcastController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('management.report.index');
+        return view('management.broadcast.index');
     }
 
     /**
@@ -20,8 +20,7 @@ class ReportController extends Controller
      */
     public function create()
     {
-        return view('management.report.create');
-        
+        //
     }
 
     /**
@@ -37,7 +36,7 @@ class ReportController extends Controller
      */
     public function show(string $id)
     {
-        return view('management.report.show');
+        //
     }
 
     /**
