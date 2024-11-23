@@ -145,6 +145,13 @@
                         </li>
 
                         <li>
+                            <a href="{{ route('admin.kasir.index') }}" class="waves-effect">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Kasir</span>
+                            </a>
+                        </li>
+
+                        <li>
                             <a href="{{ route('admin.bengkel.index') }}" class="waves-effect">
                                 <i class="fas fa-tools"></i>
                                 <span>Bengkel</span>

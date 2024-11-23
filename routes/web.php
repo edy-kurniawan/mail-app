@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AbsensiController;
 use App\Http\Controllers\Admin\BengkelController;
 use App\Http\Controllers\Admin\GajiController;
 use App\Http\Controllers\Admin\KaryawanController;
+use App\Http\Controllers\Admin\KasirController;
 
 use App\Http\Controllers\Management\ReportController;
 use App\Http\Controllers\Management\BroadcastController;
@@ -21,6 +22,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::resource('bengkel', BengkelController::class);
     Route::resource('gaji', GajiController::class);
     Route::resource('karyawan', KaryawanController::class);
+    Route::resource('kasir', KasirController::class);
 });
 
 Route::group(['prefix' => 'management', 'as' => 'management.'], function () {
